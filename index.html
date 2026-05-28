@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Andrés Martínez | Ingeniero de Software</title>
+    <meta name="description" content="Sitio web personal de Carlos Andrés Martínez - Ingeniero de Software y Desarrollador Web">
+    <meta name="keywords" content="hoja de vida, ingeniero de software, desarrollador web, portafolio">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ═══════ NAVEGACIÓN ═══════ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-code">&lt;/&gt;</span> CM<span class="logo-accent">Dev</span>
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+                <span class="menu-icon" id="menuIcon">&#9776;</span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="portfolio.html">Portafolio</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════ HERO / INICIO ═══════ -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Bienvenido a mi sitio web</p>
+                <h1>Hola, soy <span class="highlight">Carlos</span></h1>
+                <p class="hero-title">Ingeniero de Software | Desarrollador Web</p>
+                <p class="hero-bio">
+                    Soy un ingeniero de software apasionado por el desarrollo web y la creación 
+                    de experiencias digitales que impactan positivamente en las personas. Con más 
+                    de 3 años de experiencia en el diseño e implementación de aplicaciones web, 
+                    combino habilidades técnicas sólidas con una visión creativa para construir 
+                    soluciones innovadoras.
+                </p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contáctame</a>
+                    <a href="portfolio.html" class="btn btn-outline">Ver Portafolio</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/ingcmartinezvii-cpu" target="_blank" rel="noopener noreferrer">
+                        <span>GitHub</span> ↗
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <span>LinkedIn</span> ↗
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <img src="images/perfil.jpg" alt="Foto de perfil de Carlos Andrés Martínez">
+                </div>
+                <div class="profile-badge">&lt;/&gt;</div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ═══════ SOBRE MÍ ═══════ -->
+    <section id="sobre-mi" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre <span class="highlight">Mí</span></h2>
+            <p class="section-subtitle">Conoce más sobre mis habilidades, intereses y lo que me impulsa como profesional.</p>
+
+            <div class="about-grid">
+                <!-- Habilidades Técnicas -->
+                <div class="skills-section">
+                    <h3 class="subsection-title">&lt;/&gt; Habilidades Técnicas</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Información Personal -->
+                <div class="info-section">
+                    <h3 class="subsection-title">👤 Información Personal</h3>
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <span class="contact-icon">✉</span>
+                            <span>carlos.martinez@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+57 301 234 5678</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Bogotá, Colombia</span>
+                        </div>
+                    </div>
+
+                    <!-- Tabla de Idiomas -->
+                    <h3 class="subsection-title">🌐 Idiomas</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Idioma</th>
+                                <th>Nivel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Español</td>
+                                <td>Nativo</td>
+                            </tr>
+                            <tr>
+                                <td>Inglés</td>
+                                <td>B2 - Intermedio Alto</td>
+                            </tr>
+                            <tr>
+                                <td>Portugués</td>
+                                <td>A2 - Básico</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Intereses -->
+                    <h3 class="subsection-title">❤ Intereses</h3>
+                    <div class="badges">
+                        <span class="badge">Desarrollo Web</span>
+                        <span class="badge">Inteligencia Artificial</span>
+                        <span class="badge">Código Abierto</span>
+                        <span class="badge">UX/UI Design</span>
+                        <span class="badge">Fotografía</span>
+                        <span class="badge">Música</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ═══════ FORMACIÓN ACADÉMICA ═══════ -->
+    <section id="formacion" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Formación <span class="highlight">Académica</span></h2>
+            <p class="section-subtitle">Mi trayectoria educativa y certificaciones obtenidas.</p>
+
+            <!-- Tabla resumen -->
+            <div class="table-card">
+                <h3 class="table-title">Resumen de Formación</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Institución</th>
+                            <th>Programa / Certificación</th>
+                            <th>Período</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Universidad Compensar</td>
+                            <td>Ingeniería de Software</td>
+                            <td>2022 - Presente</td>
+                        </tr>
+                        <tr>
+                            <td>SENA</td>
+                            <td>Técnico en Programación de Software</td>
+                            <td>2019 - 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Platzi</td>
+                            <td>Certificación en Desarrollo Frontend</td>
+                            <td>2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Tarjetas de formación -->
+            <div class="cards-grid">
+                <div class="card card-accent">
+                    <div class="card-period">📅 2022 - Presente</div>
+                    <h3 class="card-title">Ingeniería de Software</h3>
+                    <p class="card-institution">🏛 Universidad Compensar</p>
+                    <p class="card-description">
+                        Formación integral en desarrollo de software, ingeniería de requisitos, 
+                        bases de datos y arquitectura de sistemas. Enfoque en lenguajes de 
+                        internet y tecnologías web modernas.
+                    </p>
+                </div>
+                <div class="card card-accent">
+                    <div class="card-period">📅 2019 - 2021</div>
+                    <h3 class="card-title">Técnico en Programación</h3>
+                    <p class="card-institution">🏛 SENA</p>
+                    <p class="card-description">
+                        Formación técnica en programación estructurada, orientada a objetos 
+                        y desarrollo de aplicaciones web con HTML, CSS, JavaScript y PHP.
+                    </p>
+                </div>
+                <div class="card card-accent">
+                    <div class="card-period">📅 2023</div>
+                    <h3 class="card-title">Desarrollo Frontend</h3>
+                    <p class="card-institution">🏛 Platzi</p>
+                    <p class="card-description">
+                        Programa especializado en React, TypeScript, maquetación web, 
+                        responsive design y mejores prácticas de desarrollo frontend.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ═══════ EXPERIENCIA LABORAL ═══════ -->
+    <section id="experiencia" class="section">
+        <div class="container">
+            <h2 class="section-title">Experiencia <span class="highlight">Laboral</span></h2>
+            <p class="section-subtitle">Mi recorrido profesional y los proyectos en los que he participado.</p>
+
+            <!-- Tabla resumen -->
+            <div class="table-card">
+                <h3 class="table-title">Resumen de Experiencia</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Empresa</th>
+                            <th>Cargo</th>
+                            <th>Período</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TechSoft Solutions</td>
+                            <td>Desarrollador Web Frontend</td>
+                            <td>Enero 2024 - Presente</td>
+                        </tr>
+                        <tr>
+                            <td>DataNet Colombia</td>
+                            <td>Desarrollador Web Junior</td>
+                            <td>Junio 2022 - Diciembre 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Freelance</td>
+                            <td>Diseñador y Desarrollador Web</td>
+                            <td>2021 - 2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Tarjetas de experiencia -->
+            <div class="experience-list">
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="card-title">Desarrollador Web Frontend</h3>
+                            <p class="card-institution">🏛 TechSoft Solutions</p>
+                        </div>
+                        <span class="badge badge-period">📅 Enero 2024 - Presente</span>
+                    </div>
+                    <p class="card-description">
+                        Desarrollo y mantenimiento de aplicaciones web utilizando React y Next.js. 
+                        Implementación de interfaces de usuario responsivas y accesibles.
+                    </p>
+                    <ul class="task-list">
+                        <li>Desarrollo de componentes reutilizables con React y TypeScript</li>
+                        <li>Integración de APIs RESTful y manejo de estado con Zustand</li>
+                        <li>Optimización de rendimiento web (Core Web Vitals)</li>
+                        <li>Implementación de pruebas unitarias con Jest y Testing Library</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="card-title">Desarrollador Web Junior</h3>
+                            <p class="card-institution">🏛 DataNet Colombia</p>
+                        </div>
+                        <span class="badge badge-period">📅 Junio 2022 - Diciembre 2023</span>
+                    </div>
+                    <p class="card-description">
+                        Participación en el desarrollo de sitios web corporativos y plataformas 
+                        de comercio electrónico. Maquetación de diseños en HTML/CSS y programación 
+                        de funcionalidades con JavaScript.
+                    </p>
+                    <ul class="task-list">
+                        <li>Maquetación de diseños Figma a HTML/CSS responsivo</li>
+                        <li>Desarrollo de funcionalidades interactivas con JavaScript</li>
+                        <li>Integración de pasarelas de pago en e-commerce</li>
+                        <li>Mantenimiento y actualización de sitios web existentes</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="card-title">Diseñador y Desarrollador Web</h3>
+                            <p class="card-institution">🏛 Freelance</p>
+                        </div>
+                        <span class="badge badge-period">📅 2021 - 2022</span>
+                    </div>
+                    <p class="card-description">
+                        Diseño y desarrollo de sitios web para pequeños negocios y emprendedores. 
+                        Gestión completa de proyectos desde la conceptualización hasta el despliegue.
+                    </p>
+                    <ul class="task-list">
+                        <li>Diseño de interfaces en Figma y Adobe XD</li>
+                        <li>Desarrollo de sitios web con HTML, CSS y JavaScript</li>
+                        <li>Configuración de hosting y dominios</li>
+                        <li>Posicionamiento SEO básico</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ═══════ PORTAFOLIO RESUMEN ═══════ -->
+    <section id="portafolio" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Mi <span class="highlight">Portafolio</span></h2>
+            <p class="section-subtitle">Proyectos destacados que muestran mi experiencia.</p>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/proyecto1.jpg" alt="Dashboard Analítico">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="card-title">Dashboard Analítico</h3>
+                        <p class="card-description">
+                            Panel de control interactivo para visualización de datos empresariales 
+                            en tiempo real con gráficos dinámicos y filtros avanzados.
+                        </p>
+                        <div class="badges">
+                            <span class="badge">React</span>
+                            <span class="badge">TypeScript</span>
+                            <span class="badge">Chart.js</span>
+                        </div>
+                        <a href="portfolio.html" class="btn btn-small">Ver detalle →</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/proyecto2.jpg" alt="E-Commerce Store">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="card-title">E-Commerce Store</h3>
+                        <p class="card-description">
+                            Tienda en línea completa con catálogo de productos, carrito de compras 
+                            y pasarela de pago integrada.
+                        </p>
+                        <div class="badges">
+                            <span class="badge">Next.js</span>
+                            <span class="badge">PostgreSQL</span>
+                            <span class="badge">Stripe</span>
+                        </div>
+                        <a href="portfolio.html" class="btn btn-small">Ver detalle →</a>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="images/proyecto3.jpg" alt="Task Manager App">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 class="card-title">Task Manager App</h3>
+                        <p class="card-description">
+                            Aplicación de gestión de tareas con tablero Kanban, asignación de 
+                            responsables y notificaciones en tiempo real.
+                        </p>
+                        <div class="badges">
+                            <span class="badge">React</span>
+                            <span class="badge">Firebase</span>
+                            <span class="badge">TypeScript</span>
+                        </div>
+                        <a href="portfolio.html" class="btn btn-small">Ver detalle →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="index.html" class="logo">
+                <span class="logo-code">&lt;/&gt;</span> CM<span class="logo-accent">Dev</span>
+            </a>
+            <div class="footer-social">
+                <a href="https://github.com/ingcmartinezvii-cpu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+            <p class="footer-copy">© 2024 Carlos Andrés Martínez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()" aria-label="Volver arriba">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

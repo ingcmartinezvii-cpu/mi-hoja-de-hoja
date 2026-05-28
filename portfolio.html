@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Carlos Andrés Martínez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-code">&lt;/&gt;</span> CM<span class="logo-accent">Dev</span>
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+                <span class="menu-icon" id="menuIcon">&#9776;</span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+                <li><a href="index.html#formacion">Formación</a></li>
+                <li><a href="index.html#experiencia">Experiencia</a></li>
+                <li><a href="portfolio.html">Portafolio</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Portafolio -->
+    <section class="portfolio-detail">
+        <div class="container">
+            <h2 class="section-title">Mi <span class="highlight">Portafolio</span></h2>
+            <p class="section-subtitle">Proyectos destacados que muestran mi experiencia y habilidades en desarrollo web.</p>
+
+            <!-- Tabla resumen -->
+            <div class="table-card">
+                <h3 class="table-title">Resumen de Proyectos</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Proyecto</th>
+                            <th>Tecnologías</th>
+                            <th>Enlace</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dashboard Analítico</td>
+                            <td>React, TypeScript, Chart.js, Node.js</td>
+                            <td><a href="#" style="color: var(--primary);">Ver proyecto ↗</a></td>
+                        </tr>
+                        <tr>
+                            <td>E-Commerce Store</td>
+                            <td>Next.js, PostgreSQL, Stripe, Tailwind CSS</td>
+                            <td><a href="#" style="color: var(--primary);">Ver proyecto ↗</a></td>
+                        </tr>
+                        <tr>
+                            <td>Task Manager App</td>
+                            <td>React, Firebase, Material UI, TypeScript</td>
+                            <td><a href="#" style="color: var(--primary);">Ver proyecto ↗</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="portfolio-detail-grid">
+                <div class="portfolio-detail-card">
+                    <div class="portfolio-image">
+                        <img src="images/proyecto1.jpg" alt="Dashboard Analítico">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Dashboard Analítico</h3>
+                        <p class="card-description">
+                            Panel de control interactivo para visualización de datos empresariales 
+                            en tiempo real. Incluye gráficos dinámicos, filtros avanzados y 
+                            exportación de reportes en múltiples formatos. Diseñado con un enfoque 
+                            en la usabilidad y la claridad de la información presentada.
+                        </p>
+                        <div class="tech-list">
+                            <span class="badge">React</span>
+                            <span class="badge">TypeScript</span>
+                            <span class="badge">Tailwind CSS</span>
+                            <span class="badge">Chart.js</span>
+                            <span class="badge">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail-card">
+                    <div class="portfolio-image">
+                        <img src="images/proyecto2.jpg" alt="E-Commerce Store">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Store</h3>
+                        <p class="card-description">
+                            Tienda en línea completa con catálogo de productos, carrito de compras, 
+                            pasarela de pago integrada con Stripe y panel de administración para 
+                            gestión de inventario. Implementa autenticación de usuarios y un sistema 
+                            de reseñas y calificaciones de productos.
+                        </p>
+                        <div class="tech-list">
+                            <span class="badge">Next.js</span>
+                            <span class="badge">PostgreSQL</span>
+                            <span class="badge">Stripe</span>
+                            <span class="badge">Tailwind CSS</span>
+                            <span class="badge">Prisma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail-card">
+                    <div class="portfolio-image">
+                        <img src="images/proyecto3.jpg" alt="Task Manager App">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Task Manager App</h3>
+                        <p class="card-description">
+                            Aplicación de gestión de tareas con tablero Kanban, asignación de 
+                            responsables, fechas límite y notificaciones en tiempo real utilizando 
+                            Firebase. Soporta creación de equipos y colaboración en proyectos 
+                            compartidos entre múltiples usuarios.
+                        </p>
+                        <div class="tech-list">
+                            <span class="badge">React</span>
+                            <span class="badge">Firebase</span>
+                            <span class="badge">Material UI</span>
+                            <span class="badge">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="index.html" class="logo">
+                <span class="logo-code">&lt;/&gt;</span> CM<span class="logo-accent">Dev</span>
+            </a>
+            <div class="footer-social">
+                <a href="https://github.com/ingcmartinezvii-cpu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+            <p class="footer-copy">© 2024 Carlos Andrés Martínez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()" aria-label="Volver arriba">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>

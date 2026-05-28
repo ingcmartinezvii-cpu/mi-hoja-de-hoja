@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Carlos Andrés Martínez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-code">&lt;/&gt;</span> CM<span class="logo-accent">Dev</span>
+            </a>
+            <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menú">
+                <span class="menu-icon" id="menuIcon">&#9776;</span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#sobre-mi">Sobre Mí</a></li>
+                <li><a href="index.html#formacion">Formación</a></li>
+                <li><a href="index.html#experiencia">Experiencia</a></li>
+                <li><a href="portfolio.html">Portafolio</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contacto -->
+    <section class="contact-page">
+        <div class="container">
+            <h2 class="section-title"><span class="highlight">Contáctame</span></h2>
+            <p class="section-subtitle">Si estás interesado en trabajar juntos o tienes alguna pregunta, no dudes en escribirme.</p>
+
+            <div class="contact-grid">
+                <!-- Formulario -->
+                <div class="form-card">
+                    <h3>Enviar Mensaje</h3>
+                    <p>Completa el formulario y me pondré en contacto contigo.</p>
+                    <form id="contactForm" method="post" action="#">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Información de contacto -->
+                <div>
+                    <div class="info-card" style="margin-bottom: 20px;">
+                        <h3>Información de Contacto</h3>
+                        <p>También puedes contactarme directamente.</p>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">✉</div>
+                            <div>
+                                <div class="contact-info-label">Email</div>
+                                <div class="contact-info-text">carlos.martinez@email.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📱</div>
+                            <div>
+                                <div class="contact-info-label">Teléfono</div>
+                                <div class="contact-info-text">+57 301 234 5678</div>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">📍</div>
+                            <div>
+                                <div class="contact-info-label">Ubicación</div>
+                                <div class="contact-info-text">Bogotá, Colombia</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card" style="margin-bottom: 20px;">
+                        <h3>Redes Sociales</h3>
+                        <a href="https://github.com/ingcmartinezvii-cpu" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span style="font-size: 1.3rem;">🐙</span>
+                            <div>
+                                <div class="social-link-text">GitHub</div>
+                                <div class="social-link-sub">ingcmartinezvii-cpu</div>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <span style="font-size: 1.3rem;">💼</span>
+                            <div>
+                                <div class="social-link-text">LinkedIn</div>
+                                <div class="social-link-sub">Carlos Andrés Martínez</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- FAQ Acordeón -->
+                    <div class="info-card">
+                        <h3>Preguntas Frecuentes</h3>
+                        <div class="faq-section">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    ¿Estás disponible para proyectos freelance?
+                                    <span class="faq-arrow">▼</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Sí, estoy disponible para proyectos freelance. Dependiendo de 
+                                    la complejidad y el tiempo requerido, podemos acordar un plan de 
+                                    trabajo adecuado a tus necesidades.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    ¿Cuál es tu tiempo de respuesta?
+                                    <span class="faq-arrow">▼</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Generalmente respondo en un plazo de 24 a 48 horas. Para 
+                                    proyectos urgentes, puedes contactarme directamente por teléfono.
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    ¿Trabajas de forma remota?
+                                    <span class="faq-arrow">▼</span>
+                                </button>
+                                <div class="faq-answer">
+                                    Sí, tengo experiencia trabajando de forma remota con equipos 
+                                    distribuidos. Utilizo herramientas como Git, Slack y Jira para 
+                                    la colaboración efectiva.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="index.html" class="logo">
+                <span class="logo-code">&lt;/&gt;</span> CM<span class="logo-accent">Dev</span>
+            </a>
+            <div class="footer-social">
+                <a href="https://github.com/ingcmartinezvii-cpu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+            <p class="footer-copy">© 2024 Carlos Andrés Martínez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()" aria-label="Volver arriba">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
